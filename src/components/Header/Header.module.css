@@ -1,0 +1,27 @@
+.heroContainer {
+    display: flex; /* Asegura que el contenedor sea flex */
+    flex-direction: column; /* Asegura que los elementos se alineen en columna */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    min-height: 70vh; /* Ajusta este valor según lo que necesites */
+    width: 100vw;      /* Ocupa todo el ancho de la ventana */
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%); /* Centra el contenedor horizontalmente */
+    text-align: center; /* Asegura que el texto se centre */
+    padding-top: 2rem; /* Añade espacio en la parte superior */
+    box-sizing: border-box; /* Asegura que el padding y el border no afecten al tamaño del contenedor */
+    background-image: url('../../assets/image/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    color: #fff; /* Para que el texto sea legible */
+    overflow: hidden;
+    margin: 0;         /* Elimina cualquier margen */
+    min-height: 60vh;
+}
+
+.buttonContainer {
+    margin-top: 1rem;
+}

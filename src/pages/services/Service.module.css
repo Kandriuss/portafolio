@@ -1,0 +1,11 @@
+.textContainer {
+    width: 100%;
+    text-align: justify;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin: 1rem 0;
+    padding: 0 1rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}

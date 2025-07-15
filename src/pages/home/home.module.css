@@ -1,0 +1,20 @@
+.heroContainer::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(20, 10, 40, 0.6); /* Overlay oscuro */
+    z-index: 2;
+}
+
+.heroContainer > * {
+    position: relative;
+    z-index: 3;
+}
+
+@media (max-width: 600px) {
+    .heroContainer {
+        min-height: 60vh;
+        padding-top: 1rem;
+    }
+}
+

@@ -1,0 +1,45 @@
+.image {
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center 50%; /* Ajusta el segundo valor para mover el enfoque vertical */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: -0.5rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.contact p {
+    margin: 0.1rem 0;
+    line-height: 1.4;
+}
+
+.name {
+    font-size: 2rem;
+}
+
+.cv {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cv a {
+    text-decoration: none;
+    color: #222; /* Igual que el texto normal */
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+.cv a:hover {
+    color: #007bff; /* Cambia a azul en hover, puedes ajustar el color */
+    cursor: pointer;
+}

@@ -1,0 +1,75 @@
+/* Base button styles */
+.buttom {
+  align-items: center;
+  border: 0;
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: flex;
+  font-weight: 500;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+/* Size variant - currently used */
+.medium {
+  font-size: 16px;
+  min-width: 120px;
+  padding: 12px 24px;
+}
+
+.small {
+  font-size: 14px;
+  min-width: 80px;
+  padding: 8px 16px;
+}
+
+/* Primary variant - currently used */
+.primary {
+  background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+  color: #FFFFFF;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+}
+
+.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: rgba(151, 65, 252, 0.3) 0 20px 40px -10px;
+}
+
+/* Secondary variant - currently used */
+.secondary {
+  background-color: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+}
+
+/* Disabled state */
+.buttom:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+.buttom:disabled:hover {
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* Focus state for accessibility */
+.buttom:focus {
+  outline: 2px solid #3B82F6;
+  outline-offset: 2px;
+}
+
+/* Active state */
+.buttom:active {
+  transform: translateY(0);
+}
