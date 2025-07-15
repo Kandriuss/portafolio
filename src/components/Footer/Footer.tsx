@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
     },
     {
       name: 'LinkedIn',
-      url: 'https://linkedin.com/in/tu-usuario',
+      url: 'www.linkedin.com/in/andresbolviar-sam',
       icon: <FaLinkedin />
     },
     {

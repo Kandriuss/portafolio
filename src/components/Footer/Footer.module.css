@@ -1,10 +1,25 @@
 .footer {
   background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
-  color: white;
-  padding: 3rem 0 2rem;
-  margin-top: 3rem;
+  display: flex; /* Asegura que el contenedor sea flex */
+  flex-direction: column; /* Asegura que los elementos se alineen en columna */
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra horizontalmente */
+  min-height: 25vh; /* Reducido de 50vh a 25vh para hacerlo más pequeño */
+  width: 100vw;      /* Ocupa todo el ancho de la ventana */
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%); /* Centra el contenedor horizontalmente */
+  text-align: center; /* Asegura que el texto se centre */
+  padding: 1.5rem 0; /* Reducido el padding vertical */
+  box-sizing: border-box; /* Asegura que el padding y el border no afecten al tamaño del contenedor */
+  background-size: cover;
+  background-position: center;
   position: relative;
+  z-index: 1;
+  color: #fff; /* Para que el texto sea legible */
   overflow: hidden;
+  margin: 0; 
+  margin-top: 2rem;        /* Elimina cualquier margen */
 }
 
 .footer::before {
@@ -29,7 +44,7 @@
 .content {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem; /* Reducido de 2rem a 1.5rem */
   align-items: center;
   text-align: center;
 }
@@ -38,11 +53,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem; /* Reducido de 1.5rem a 1rem */
 }
 
 .socialTitle {
-  font-size: 1.5rem;
+  font-size: 1.3rem; /* Reducido de 1.5rem a 1.3rem */
   font-weight: 600;
   margin: 0;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
