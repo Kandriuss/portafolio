@@ -73,16 +73,16 @@ export const Service = () => {
                 </div>
             </div>
             <div className='separator'></div>
-            <h1 className='title-bold'>¿Por qué elegirme como desarrollador?</h1>
-            <div className={styles.textContainer}>
-                <p className='textSpecify text'>
-                    Porque no solo desarrollo software, desarrollo soluciones con visión.
-                    <br /><br />
-                    Soy una persona apasionada por la innovación, con mentalidad analítica, enfoque profesional y compromiso real con cada proyecto. Combino creatividad, base técnica sólida y responsabilidad para entregar resultados que generan impacto.
-                    <br /><br />
-                    Ya sea que necesites una página web que represente tu marca, automatizar un proceso en tu empresa o construir una aplicación completa desde cero, te ofrezco tecnología de calidad, comunicación clara y resultados que suman valor.
-                </p>
-            </div>
+                <h1 className='title-bold'>¿Por qué elegirme como desarrollador?</h1>
+                <div className={styles.whyChooseMeSection}>
+                    <p className='textSpecify text'>
+                        Porque no solo desarrollo software, desarrollo soluciones con visión.
+                        <br /><br />
+                        Soy una persona apasionada por la innovación, con mentalidad analítica, enfoque profesional y compromiso real con cada proyecto. Combino creatividad, base técnica sólida y responsabilidad para entregar resultados que generan impacto.
+                        <br /><br />
+                        Ya sea que necesites una página web que represente tu marca, automatizar un proceso en tu empresa o construir una aplicación completa desde cero, te ofrezco tecnología de calidad, comunicación clara y resultados que suman valor.
+                    </p>
+                </div>
         </main>
        
     )
