@@ -112,6 +112,55 @@
   color: #fff;
 }
 
+/* NavBar del footer */
+.footerNav {
+  margin-bottom: 1rem;
+}
+
+.footerNavLinks {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.footerNavLinks a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  position: relative;
+  padding: 0.5rem 0;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.footerNavLinks a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  transition: width 0.3s ease;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.footerNavLinks a:hover::after {
+  width: 100%;
+}
+
+.footerNavLinks a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.8);
+  opacity: 1;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .footer {
@@ -120,6 +169,14 @@
   
   .container {
     padding: 0 1rem;
+  }
+  
+  .footerNavLinks {
+    gap: 1.5rem;
+  }
+  
+  .footerNavLinks a {
+    font-size: 0.9rem;
   }
   
   .socialTitle {
@@ -146,6 +203,15 @@
 }
 
 @media (max-width: 480px) {
+  .footerNavLinks {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .footerNavLinks a {
+    font-size: 0.8rem;
+  }
+  
   .socialLinks {
     gap: 0.6rem;
   }
