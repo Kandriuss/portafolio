@@ -33,7 +33,7 @@ export const NavBar = () => {
             <ul className={`${styles.navlinks} ${isOpen ? styles.open : ''}`}>
                 <li><a className="text" href={PATHS.HOME} onClick={closeMenu}>Inicio</a></li>
                 <li><a className="text" href={PATHS.ABOUT_ME} onClick={closeMenu}>Sobre Mi</a></li>
-                <li><a className="text" href={PATHS.PROJECTS} onClick={closeMenu}>Proyectos</a></li>
+                <li><a className={`text ${styles.disabled}`} href={PATHS.PROJECTS} onClick={(e) => { e.preventDefault(); closeMenu(); }}>Proyectos</a></li>
                 <li><a className="text" href={PATHS.SERVICES} onClick={closeMenu}>Servicios</a></li>
             </ul>
         </nav>

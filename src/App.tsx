@@ -17,6 +17,7 @@ export const App = () => {
                     <Route path={PATHS.HOME} element={<Home />} />
                     <Route path={PATHS.ABOUT_ME} element={<AboutMe />} />
                     <Route path={PATHS.SERVICES} element={<Service />} />
+                    <Route path="*" element={<div style={{textAlign: 'center', padding: '2rem', color: 'white'}}>Página no encontrada</div>} />
                 </Routes>
             </MainLayout>
         </BrowserRouter>

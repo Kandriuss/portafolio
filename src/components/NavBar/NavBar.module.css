@@ -29,6 +29,7 @@
   transition: transform 0.2s ease;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
   box-shadow: 0 0 20px rgba(102, 126, 234, 0.3);
+  margin-left: 2rem;
 }
 
 .logo:hover {
@@ -76,6 +77,22 @@
   text-shadow: 0 0 12px rgba(147, 197, 253, 0.6);
 }
 
+/* Estilos para enlaces deshabilitados */
+.navlinks a.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.navlinks a.disabled:hover {
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+}
+
+.navlinks a.disabled::after {
+  display: none;
+}
+
 /* Icono hamburguesa oculto por defecto */
 .menuIcon {
   display: none;
@@ -85,15 +102,18 @@
   font-size: 1.8rem;
   cursor: pointer;
   z-index: 200;
-  margin-right: 1rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
 }
 
 /* Responsive */
 @media (max-width: 600px) {
   .navbar {
     justify-content: space-between;
-    padding: 1rem;
-    width: calc(100% - 2rem);
+    padding: 1rem 0;
+    width: 100%;
+    left: 0;
+    top: 0;
   }
 
   .menuIcon {
@@ -104,7 +124,7 @@
     position: absolute;
     top: 60px;
     left: 0;
-    width: 100%;
+    width: 100vw;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.95);
     padding: 1rem 0;
