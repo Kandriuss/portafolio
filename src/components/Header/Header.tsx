@@ -23,8 +23,11 @@ export const Header: React.FC = () => {
                         <span className="text">Hola, soy Andrés Bolívar</span>
                     </div>
                     <h1 className={styles.mainTitle}>
-                        INGENIERO EN INFORMÁTICA DEDICADO AL DESARROLLO DE SOFTWARE 
+                        INGENIERO EN INFORMÁTICA
                     </h1>
+                    <h2 className={styles.secondTitle}>
+                        DEDICADO AL DESARROLLO DE SOFTWARE
+                    </h2>
                     <div className={styles.location}>
                         <span className="text">Santiago, Chile</span>
                     </div>
@@ -43,12 +46,12 @@ export const Header: React.FC = () => {
                     <div className={styles.profileImage}>
                         <img src={imgHeader} alt="Andrés Bolívar" />
                     </div>
-                </div> 
+                </div>
             </div>
-            <div className={styles.scrollIndicator}>
+            {/* <div className={styles.scrollIndicator}>
                 <span className="text">SCROLL PARA MÁS</span>
                 <div className={styles.scrollLine}></div>
-            </div>
+            </div> */}
         </div>
     )
 }

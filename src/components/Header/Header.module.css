@@ -8,31 +8,40 @@
     overflow: hidden;
 }
 
-
+/* Patrón de puntos pixelados */
+.headerContainer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+        radial-gradient(circle at 75% 75%, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 40px 40px;
+    background-position: 0 0, 20px 20px;
+    pointer-events: none;
+}
 
 .heroContent {
     display: flex;
     flex: 1;
     align-items: center;
-    padding: 0;
+    justify-content: space-between;
+    padding: 0 4rem;
     margin-top: 80px;
     position: relative;
     z-index: 1;
+    min-height: calc(100vh - 80px);
 }
 
 .textSection {
     flex: 1;
-    padding: 0 4rem;
-    position: relative;
-    background: 
-        radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
-        radial-gradient(circle at 75% 75%, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
-    background-size: 50px 50px;
-    background-position: 0 0, 25px 25px;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
 }
 
 .greeting {
@@ -66,30 +75,11 @@
     letter-spacing: -1px;
 }
 
-.subtitle {
-    margin-bottom: 0.5rem;
-}
-
-.subtitle span {
-    color: #ffffff;
-    font-size: 1.3rem;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-}
-
-.location {
-    margin-bottom: 2rem;
-}
-
 .location span {
     color: #ffffff;
     font-size: 1.3rem;
     font-weight: 500;
     letter-spacing: 0.5px;
-}
-
-.buttonContainer {
-    margin-top: 2rem;
 }
 
 .imageSection {
@@ -98,7 +88,6 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    min-height: 100vh;
 }
 
 .profileImage {
@@ -133,6 +122,7 @@
     align-items: center;
     gap: 1rem;
     z-index: 10;
+    margin-top: 4rem;
 }
 
 .scrollIndicator span {
@@ -150,26 +140,15 @@
     position: relative;
 }
 
-
-
 /* Responsive Design */
 @media (max-width: 1200px) {
     .heroContent {
         padding: 0 3rem;
     }
     
-    .textSection {
-        padding: 0 3rem;
-    }
-    
     .mainTitle,
     .secondTitle {
         font-size: 3rem;
-    }
-    
-    .profileImage {
-        width: 650px;
-        height: 650px;
     }
 }
 
@@ -185,7 +164,7 @@
         padding: 0 2rem;
         order: 2;
         min-height: auto;
-        background-size: 30px 30px;
+        align-items: center;
     }
     
     .imageSection {
@@ -196,10 +175,15 @@
     .mainTitle,
     .secondTitle {
         font-size: 2.5rem;
+        text-align: center;
     }
     
     .profileImage {
         height: 50vh;
+    }
+    
+    .buttonContainer {
+        justify-content: center;
     }
     
     .scrollIndicator {
@@ -215,17 +199,9 @@
         gap: 2rem;
     }
     
-    .textSection {
-        background-size: 25px 25px;
-    }
-    
     .mainTitle,
     .secondTitle {
         font-size: 2.2rem;
-    }
-    
-    .subtitle span {
-        font-size: 1.1rem;
     }
     
     .location span {
@@ -241,15 +217,11 @@
     }
     
     .scrollIndicator {
-        bottom: 1rem;
+        bottom: 0.2rem;
     }
     
     .scrollIndicator span {
         font-size: 0.8rem;
-    }
-    
-    .scrollLine {
-        width: 40px;
     }
 }
 
@@ -257,10 +229,6 @@
     .heroContent {
         padding: 0 1rem;
         gap: 1.5rem;
-    }
-    
-    .textSection {
-        background-size: 20px 20px;
     }
     
     .mainTitle,
