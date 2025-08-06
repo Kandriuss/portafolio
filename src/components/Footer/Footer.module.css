@@ -20,6 +20,7 @@
   overflow: hidden;
   margin: 0; 
   margin-top: 2rem;        /* Elimina cualquier margen */
+  background: #0f0f0f;
 }
 
 .footer::before {
@@ -29,7 +30,11 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.1);
+  background-image: 
+      radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+      radial-gradient(circle at 75% 75%, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-position: 0 0, 20px 20px;
   pointer-events: none;
 }
 
