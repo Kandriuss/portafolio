@@ -1,27 +1,300 @@
-.heroContainer {
-    display: flex; /* Asegura que el contenedor sea flex */
-    flex-direction: column; /* Asegura que los elementos se alineen en columna */
-    justify-content: center; /* Centra verticalmente */
-    align-items: center; /* Centra horizontalmente */
-    min-height: 70vh; /* Ajusta este valor según lo que necesites */
-    width: 100vw;      /* Ocupa todo el ancho de la ventana */
-    left: 50%;
-    right: 50%;
-    transform: translateX(-50%); /* Centra el contenedor horizontalmente */
-    text-align: center; /* Asegura que el texto se centre */
-    padding-top: 2rem; /* Añade espacio en la parte superior */
-    box-sizing: border-box; /* Asegura que el padding y el border no afecten al tamaño del contenedor */
-    background-image: url('../../assets/image/banner.jpg');
-    background-size: cover;
-    background-position: center;
+.headerContainer {
+    min-height: 100vh;
+    width: 100%;
+    background: #0f0f0f;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+
+.heroContent {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    padding: 0;
+    margin-top: 80px;
     position: relative;
     z-index: 1;
-    color: #fff; /* Para que el texto sea legible */
-    overflow: hidden;
-    margin: 0;         /* Elimina cualquier margen */
-    min-height: 60vh;
+}
+
+.textSection {
+    flex: 1;
+    padding: 0 4rem;
+    position: relative;
+    background: 
+        radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+        radial-gradient(circle at 75% 75%, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+    background-size: 50px 50px;
+    background-position: 0 0, 25px 25px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.greeting {
+    margin-bottom: 1rem;
+}
+
+.greeting span {
+    color: #667eea;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.mainTitle {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 700;
+    font-size: 3.5rem;
+    color: #ffffff;
+    margin: 0 0 0.5rem 0;
+    line-height: 1.1;
+    letter-spacing: -1px;
+}
+
+.secondTitle {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 700;
+    font-size: 3.5rem;
+    color: #ffffff;
+    margin: 0 0 1rem 0;
+    line-height: 1.1;
+    letter-spacing: -1px;
+}
+
+.subtitle {
+    margin-bottom: 0.5rem;
+}
+
+.subtitle span {
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.location {
+    margin-bottom: 2rem;
+}
+
+.location span {
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
 }
 
 .buttonContainer {
-    margin-top: 1rem;
+    margin-top: 2rem;
+}
+
+.imageSection {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 100vh;
+}
+
+.profileImage {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profileImage img {
+    width: 550px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.profileImage:hover img {
+    transform: scale(1.02);
+}
+
+.scrollIndicator {
+    position: absolute;
+    bottom: 2rem;
+    left: 4rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    z-index: 10;
+}
+
+.scrollIndicator span {
+    color: #ffffff;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.scrollLine {
+    width: 60px;
+    height: 2px;
+    background: #667eea;
+    border-radius: 1px;
+    position: relative;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .heroContent {
+        padding: 0 3rem;
+    }
+    
+    .textSection {
+        padding: 0 3rem;
+    }
+    
+    .mainTitle,
+    .secondTitle {
+        font-size: 3rem;
+    }
+    
+    .profileImage {
+        width: 650px;
+        height: 650px;
+    }
+}
+
+@media (max-width: 992px) {
+    .heroContent {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 2rem;
+        gap: 3rem;
+    }
+    
+    .textSection {
+        padding: 0 2rem;
+        order: 2;
+        min-height: auto;
+        background-size: 30px 30px;
+    }
+    
+    .imageSection {
+        order: 1;
+        min-height: 50vh;
+    }
+    
+    .mainTitle,
+    .secondTitle {
+        font-size: 2.5rem;
+    }
+    
+    .profileImage {
+        height: 50vh;
+    }
+    
+    .scrollIndicator {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .heroContent {
+        padding: 0 1.5rem;
+        gap: 2rem;
+    }
+    
+    .textSection {
+        background-size: 25px 25px;
+    }
+    
+    .mainTitle,
+    .secondTitle {
+        font-size: 2.2rem;
+    }
+    
+    .subtitle span {
+        font-size: 1.1rem;
+    }
+    
+    .location span {
+        font-size: 1.1rem;
+    }
+    
+    .imageSection {
+        min-height: 40vh;
+    }
+    
+    .profileImage {
+        height: 40vh;
+    }
+    
+    .scrollIndicator {
+        bottom: 1rem;
+    }
+    
+    .scrollIndicator span {
+        font-size: 0.8rem;
+    }
+    
+    .scrollLine {
+        width: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .heroContent {
+        padding: 0 1rem;
+        gap: 1.5rem;
+    }
+    
+    .textSection {
+        background-size: 20px 20px;
+    }
+    
+    .mainTitle,
+    .secondTitle {
+        font-size: 1.8rem;
+    }
+    
+    .greeting span {
+        font-size: 1rem;
+    }
+    
+    .location span {
+        font-size: 1rem;
+    }
+    
+    .imageSection {
+        min-height: 35vh;
+    }
+    
+    .profileImage {
+        height: 35vh;
+    }
+    
+    .scrollIndicator {
+        flex-direction: column;
+        gap: 0.5rem;
+        bottom: 0.5rem;
+    }
+    
+    .scrollIndicator span {
+        font-size: 0.7rem;
+    }
+    
+    .scrollLine {
+        width: 30px;
+    }
 }

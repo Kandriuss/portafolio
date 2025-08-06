@@ -15,6 +15,8 @@
   font-style: normal;
   text-align: center;
   font-size: 2rem;
+  margin: 2rem 0;
+  padding: 0 1rem;
 }
 
 /* Clases para Electrolize */
@@ -40,21 +42,93 @@
 
 .container {
   justify-content: center;
+  padding: 0 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .cardRow {
   display: flex; 
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
-  gap: 5rem; /* Espacio entre tarjetas */
-  flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en múltiples filas */
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+  flex-wrap: wrap;
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
 
+/* Responsive breakpoints */
+@media (max-width: 1200px) {
+  .cardRow {
+    gap: 1.5rem;
+  }
+  
+  .title-bold {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .cardRow {
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .title-bold {
+    font-size: 1.6rem;
+    margin: 1.5rem 0;
+  }
+  
+  .textSpecify {
+    font-size: 1rem;
+  }
+  
+  .separator {
+    margin: 2rem 0;
+  }
+}
+
 @media (max-width: 600px) {
   .text {
-      font-size: 1rem;
-      text-align: left;
+    font-size: 1rem;
+    text-align: left;
+  }
+  
+  .title-bold {
+    font-size: 1.4rem;
+    margin: 1rem 0;
+  }
+  
+  .cardRow {
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .container {
+    padding: 0 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title-bold {
+    font-size: 1.2rem;
+    padding: 0 0.5rem;
+  }
+  
+  .textSpecify {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  
+  .cardRow {
+    gap: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .container {
+    padding: 0 0.25rem;
   }
 }
