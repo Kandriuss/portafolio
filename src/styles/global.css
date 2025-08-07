@@ -104,11 +104,15 @@ html, body {
     gap: 1.5rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    flex-direction: column;
+    align-items: center;
   }
   
   .cardRow > * {
-    flex: 0 0 250px;
-    max-width: 250px;
+    flex: 0 0 90%;
+    max-width: 90%;
+    width: 90%;
+    height: 230px;
   }
   
   .title-bold {
@@ -142,8 +146,13 @@ html, body {
     margin-bottom: 1.5rem;
     flex-direction: column;
     align-items: center;
-    height: 300px;
-    width: 100%;
+  }
+  
+  .cardRow > * {
+    flex: 0 0 90%;
+    max-width: 90%;
+    width: 90%;
+    height: 230px;
   }
   
   .container {
@@ -168,6 +177,13 @@ html, body {
     margin-bottom: 1rem;
     flex-direction: column;
     align-items: center;
+  }
+  
+  .cardRow > * {
+    flex: 0 0 90%;
+    max-width: 90%;
+    width: 90%;
+    height: 230px;
   }
   
   .container {
