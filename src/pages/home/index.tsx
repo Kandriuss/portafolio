@@ -38,7 +38,7 @@ export const Home = () => {
                 {/* Conocimientos */}
                 <div>
                     <h2 className={`title-bold ${styles.title}`}>Conocimientos</h2>
-                    <div className='cardRow'>
+                    <div className='cardRow conocimientos-grid'>
                         <Card
                             title='Frontend'
                             description='React, Next.js, HTML5, CSS3, JavaScript, TypeScript, Tailwind CSS, Bootstrap, etc'
