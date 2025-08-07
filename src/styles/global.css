@@ -97,7 +97,7 @@
 @media (max-width: 600px) {
   .text {
     font-size: 1rem;
-    text-align: left;
+    text-align: center;
   }
   
   .title-bold {
