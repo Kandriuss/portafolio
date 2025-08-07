@@ -1,6 +1,26 @@
 /* Importación de fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Silkscreen:wght@400;700&display=swap');
 
+/* Reset CSS para eliminar márgenes y padding por defecto */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
 /* Clases para Silkscreen */
 .title {
   font-family: "Silkscreen", sans-serif;
@@ -138,6 +158,6 @@
   }
   
   .container {
-    padding: 0 0.25rem;
+    padding: 0;
   }
 }
