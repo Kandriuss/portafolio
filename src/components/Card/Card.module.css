@@ -85,9 +85,9 @@ p {
 @media (max-width: 600px) {
     .card {
         width: 100%;
-        min-height: 200px;
+        min-height: 250px;
         padding: 1rem;
-        max-width: 100%;
+        max-width: 90%;
     }
     
     .icon {
