@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
             <ul className={styles.footerNavLinks}>
               <li><a className="text" href={PATHS.HOME}>Inicio</a></li>
               <li><a className="text" href={PATHS.ABOUT_ME}>Sobre Mi</a></li>
-              <li><a className={`text ${styles.disabled}`} href={PATHS.PROJECTS} onClick={(e) => e.preventDefault()}>Proyectos</a></li>
+              <li><a className="text" href={PATHS.PROJECTS}>Proyectos</a></li>
               <li><a className="text" href={PATHS.SERVICES}>Servicios</a></li>
             </ul>
           </nav>

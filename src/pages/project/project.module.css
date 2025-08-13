@@ -1,0 +1,25 @@
+.title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.projectsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    min-height: 400px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .projectsContainer {
+        padding: 1rem;
+        min-height: 350px;
+    }
+    
+    .title {
+        margin-bottom: 1.5rem;
+    }
+}

@@ -30,7 +30,7 @@ export const NavBar = () => {
                 <li><a className="text" href={PATHS.HOME} onClick={closeMenu}>INICIO</a></li>
                 <li><a className="text" href={PATHS.ABOUT_ME} onClick={closeMenu}>SOBRE MI</a></li>
                 <li><a className="text" href={PATHS.SERVICES} onClick={closeMenu}>SERVICIOS</a></li>
-                <li><a className={`text ${styles.disabled}`} href={PATHS.PROJECTS} onClick={(e) => { e.preventDefault(); closeMenu(); }}>PROYECTOS</a></li>
+                <li><a className="text" href={PATHS.PROJECTS} onClick={closeMenu}>PROYECTOS</a></li>
             </ul>
 
             {/* Iconos de redes sociales */}

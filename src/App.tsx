@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Home } from "./pages/home";
 import { AboutMe } from './pages/about-me';
 import { Service } from './pages/services';
+import { Project } from './pages/project';
 //Importar el layout
 import { MainLayout } from './MainLayout';
 //Importar Path 
@@ -17,6 +18,7 @@ export const App = () => {
                     <Route path={PATHS.HOME} element={<Home />} />
                     <Route path={PATHS.ABOUT_ME} element={<AboutMe />} />
                     <Route path={PATHS.SERVICES} element={<Service />} />
+                    <Route path={PATHS.PROJECTS} element={<Project />} />
                     <Route path="*" element={<div style={{textAlign: 'center', padding: '2rem', color: 'white'}}>Página no encontrada</div>} />
                 </Routes>
             </MainLayout>
